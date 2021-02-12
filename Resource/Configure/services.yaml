@@ -1,0 +1,27 @@
+services:
+  _defaults:
+    autowire: true
+    public: true
+
+  Technopark\Marketplace\AliExpress\OrderIssueDiscover\Infrastructure\Service\EntityManager\EntityManagerFactory: ~
+
+  Technopark\Marketplace\AliExpress\OrderIssueDiscover\:
+    resource: '../../*'
+    exclude: '../../**/{Dto,Message,Model}'
+
+  Technopark\Marketplace\AliExpress\OrderIssueDiscover\Application\Service\Handler\DelayedOrderIssueHandlerInterface:
+    class: 'Technopark\Marketplace\AliExpress\OrderIssueDiscover\Application\Service\Handler\DelayedOrderIssueHandler'
+
+  Technopark\Marketplace\AliExpress\OrderIssueDiscover\Application\Service\Handler\OrderIssueHandlerInterface:
+    class: 'Technopark\Marketplace\AliExpress\OrderIssueDiscover\Application\Service\Handler\OrderIssueHandler'
+
+  mailer:
+    class: '\Swift_Mailer'
+    factory: ['@Technopark\Marketplace\AliExpress\OrderIssueDiscover\Infrastructure\Service\Sender\Factory\MailerFactory', 'getInstance']
+
+  Technopark\Marketplace\AliExpress\OrderIssueDiscover\Infrastructure\Service\Sender\SenderInterface:
+    class: 'Technopark\Marketplace\AliExpress\OrderIssueDiscover\Infrastructure\Service\Sender\EmailSender'
+    arguments: ['@mailer']
+
+  Doctrine\ORM\EntityManagerInterface:
+    factory: ['@Technopark\Marketplace\AliExpress\OrderIssueDiscover\Infrastructure\Service\EntityManager\EntityManagerFactory', 'create']

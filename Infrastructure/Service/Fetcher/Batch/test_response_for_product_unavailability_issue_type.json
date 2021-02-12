@@ -1,0 +1,96 @@
+{
+    "count":2,
+    "next":null,
+    "previous":null,
+    "results":[
+        {
+            "order_items":[
+                {
+                    "name":"Вакуумный упаковщик Caso VC 100",
+                    "logistics_amount":"221.0500000000",
+                    "logistics_type":"DPD_RU_CITY_RUB",
+                    "product_unit_price_amount":"9300.0000000000",
+                    "product_count": 1,
+                    "sku_code":"102446"
+                }
+            ],
+            "order_id":"5006395692022122",
+            "order_status":"FINISH",
+            "frozen_status":"NO_FROZEN",
+            "issue_status":"NO_ISSUE",
+            "fund_status":"PAY_SUCCESS",
+            "pay_amount":"9521.0500000000",
+            "buyer_login_id":"ru1089612327",
+            "buyer_signer_fullname":"oxana saraikina",
+            "city":"Balakovo",
+            "city_rus":"Балаково",
+            "phone_country":"+7",
+            "mobile_no":"9370231115",
+            "contact_person":"сарайкина оксана николаевна",
+            "address_full":"413857, Saratov Oblast, Balakovo, комсомльская, 32",
+            "order_end_reason":"",
+            "address_formatted":[
+                {
+                    "city":"Балаково",
+                    "flat":null,
+                    "block":null,
+                    "house":"32",
+                    "region":"Саратовская",
+                    "fias_id":"c1e84e5a-7c3d-4c8c-a5be-0c018e98b020",
+                    "geo_lat":"52.0257561",
+                    "geo_lon":"47.7868285",
+                    "fias_level":"8",
+                    "postal_code":"413857",
+                    "settlement":null,
+                    "street_with_type":"ул Комсомольская",
+                    "region_with_type":"Саратовская обл"
+                }
+            ]
+        },
+
+        {
+            "order_items":[
+                {
+                    "name":"Наушники JBL TUNE 700BT, коралловый",
+                    "logistics_amount":"210.5300000000",
+                    "logistics_type":"DPD_RU_CITY_RUB",
+                    "product_count":5,
+                    "product_unit_price_amount":"3790.0000000000",
+                    "sku_code":"106647"
+                }
+            ],
+            "order_id":"9999023370234888",
+            "order_status":"FINISH",
+            "frozen_status":"NO_FROZEN",
+            "issue_status":"NO_ISSUE",
+            "fund_status":"NOT_PAY",
+            "pay_amount":"4000.5300000000",
+            "buyer_login_id":"ru1152494593ileae",
+            "buyer_signer_fullname":"google v",
+            "city":"Saint Petersburg",
+            "city_rus":"Санкт-Петербург",
+            "phone_country":"+7",
+            "mobile_no":"9522066302",
+            "contact_person":"Шорников Василий Васильевич",
+            "address_full":"198328, Saint Petersburg, Saint Petersburg, проспект кузнецова 25к1кв14",
+            "order_end_reason":"",
+            "address_formatted":[
+                {
+                    "city":null,
+                    "flat":"14",
+                    "block":"1",
+                    "house":"25",
+                    "region":"Санкт-Петербург",
+                    "fias_id":"9eed10de-cfdf-4843-8b7e-718abf85db76",
+                    "geo_lat":"59.8530154",
+                    "geo_lon":"30.1845032",
+                    "fias_level":"7",
+                    "settlement":null,
+                    "postal_code":"198328",
+                    "region_with_type":"г Санкт-Петербург",
+                    "street_with_type":"пр-кт Кузнецова"
+                }
+            ]
+        }
+    ]
+}
