@@ -35,11 +35,10 @@ class Logger implements LoggerInterface
      */
     private function logMessage($message)
     {
-        echo "{$message}\n";
-
         $this->sendMessageToRocketChat($message);
     }
 
+    /** @param string $message */
     private function sendMessageToRocketChat($message)
     {
         $channelConfig = $this->config->path('rocket_chat')->toArray();
